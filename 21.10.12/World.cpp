@@ -3,6 +3,7 @@
 #include "Floor.h"
 #include "Goal.h"
 #include "Wall.h"
+#include <iostream>
 
 UWorld::UWorld()
 {
@@ -86,3 +87,26 @@ void UWorld::Run()
 		}
 	}
 }
+
+void UWorld::AddPlayer(APlayer* NewPlayer)
+{
+	Player = NewPlayer;
+}
+
+void UWorld::AddWall(AWall* NewWall)
+{
+	Walls.push_back(NewWall);
+}
+
+void UWorld::AddGoal(AGoal* NewGoal)
+{
+	Goal= NewGoal;
+}
+
+void UWorld::AddFloor(AFloor* NewFloor)
+{
+	Floors.push_back(NewFloor);
+}
+
+
+

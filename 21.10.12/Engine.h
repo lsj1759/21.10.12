@@ -1,4 +1,8 @@
 #pragma once
+
+#include "Vector2D.h"
+#include "Actor.h"
+
 class UEngine
 {
 public:
@@ -6,6 +10,14 @@ public:
 	~UEngine();
 
 	void Run();
+
+	void SpawnPlayer(FVector2D NewLocation);
+	void SpawnWall(FVector2D NewLocation);
+	void SpawnGoal(FVector2D NewLocation);
+	void SpawnFloor(FVector2D NewLocation);
+
+
+
 private:
 	bool bIsRunning = false;
 

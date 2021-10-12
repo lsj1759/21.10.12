@@ -8,24 +8,28 @@
 
 using namespace std;
 
+
 int main()
-
 {
-	APlayer Player;
-	AFloor Floor;
-	AWall Wall;
-	AGoal Goal;
+	UEngine Engine;
 
-	Player.Render();
-	Floor.Render();
-	Goal.Render();
-	Wall.Render();
-	
-	/*UEngine* Engine = new UEngine();
+	Engine.SpawnPlayer(FVector2D(2, 2));
+	Engine.SpawnWall(FVector2D(1, 1));
+	Engine.SpawnWall(FVector2D(2, 1));
+	Engine.SpawnWall(FVector2D(3, 1));
+	Engine.SpawnWall(FVector2D(4, 1));
+	Engine.SpawnWall(FVector2D(5, 1));
+	Engine.SpawnWall(FVector2D(6, 1));
+	Engine.SpawnWall(FVector2D(7, 1));
+	Engine.SpawnWall(FVector2D(8, 1));
+	Engine.SpawnWall(FVector2D(9, 1));
+	Engine.SpawnWall(FVector2D(10, 1));
+	Engine.SpawnWall(FVector2D(9, 1));
 
-	Engine->Run();
 
-	delete Engine;*/
+
+
+	Engine.Run();
 
 	return 0;
 }
