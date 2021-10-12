@@ -1,8 +1,14 @@
 #pragma once
-class APlayer
+
+#include "Vector2D.h"
+#include "Actor.h"
+
+class APlayer : public AActor //»ó¼Ó
 {
 public:
 	APlayer();
 	~APlayer();
+
+	void Render();
 };
 
