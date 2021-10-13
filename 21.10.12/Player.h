@@ -12,6 +12,6 @@ public:
 	APlayer();
 	~APlayer();
 
-	virtual void Render() override;
+	virtual void Render() override; // 추가 된 부분
 };
 
