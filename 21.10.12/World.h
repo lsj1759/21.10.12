@@ -3,6 +3,9 @@
 #include <vector>
 #include "Vector2D.h"
 #include "Actor.h"
+#include <iostream>
+#include <typeinfo>
+
 class APlayer;
 class AFloor;
 class AWall;
@@ -31,6 +34,8 @@ private:
 	
 	APlayer* Player;
 	AGoal* Goal;	
+
+	std::vector<AActor*> Actors;
 };
 
 

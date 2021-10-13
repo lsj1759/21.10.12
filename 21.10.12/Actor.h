@@ -24,11 +24,13 @@ public:
 
 	void Inptu();
 	void Tick();
-	void Render();
+	virtual void Render(); //override
+
+
 	void SetLocation(FVector2D NewLocation);
 	FVector2D GetLocation();
 
-protected: // ªÛº” æ»«ÿ ¡‹
+protected: 
 	FVector2D Location;
 };
 

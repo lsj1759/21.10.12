@@ -2,6 +2,8 @@
 
 #include "Vector2D.h"
 #include "Actor.h"
+#include "World.h"
+#include <iostream>
 
 class UEngine
 {
@@ -10,6 +12,8 @@ public:
 	~UEngine();
 
 	void Run();
+
+	bool LoadLevel(std::string filename);
 
 	void SpawnPlayer(FVector2D NewLocation);
 	void SpawnWall(FVector2D NewLocation);
